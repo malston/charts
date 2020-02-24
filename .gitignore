@@ -1,0 +1,26 @@
+# Cert files
+*.crt
+*.key
+*.pem
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Visual Studio Code artifacts
+.vscode
+
+# IDE
+.idea
+
+# OS turds
+.DS_Store
+
+# Secrets
+creds.yml
+
+# Direnv
+.envrc

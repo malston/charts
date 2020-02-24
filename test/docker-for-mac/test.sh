@@ -81,7 +81,7 @@ run_test() {
     # docker exec "$testcontainer_id" ct lint --chart-dirs stable,incubator --remote k8s
     # docker exec "$testcontainer_id" ct install --chart-dirs stable,incubator --remote k8s
     cd "$__CWD"
-    docker exec "$testcontainer_id" ct lint-and-install --charts "${chart}" --chart-repos "${chart}=https://kubernetes-charts.storage.googleapis.com"
+    docker exec "$testcontainer_id" ct lint-and-install --config="test/ct.yaml"
 }
 
 __CWD="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
