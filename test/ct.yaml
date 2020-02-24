@@ -4,4 +4,4 @@ charts:
   - prometheus-operator
 chart-repos:
   - prometheus-operator=https://kubernetes-charts.storage.googleapis.com
-helm-extra-args: --timeout 600s
+helm-extra-args: --timeout 300s
